@@ -25,9 +25,9 @@ public class ClienteController {
     public ResponseEntity<Cliente> clientes(@PathVariable("id") Integer id) {
         Cliente cliente = clienteRepository.findClienteById(id);
         Carro carro = cliente.getCarros().stream().findFirst().get();
-        carro.setCliente(null);
+//        carro.setCliente(null);
         Multa multa = carro.getMultas().stream().findFirst().get();
-        multa.setCarro(null);
+//        multa.setCarro(null);
         return ResponseEntity.ok(cliente);
     }
 

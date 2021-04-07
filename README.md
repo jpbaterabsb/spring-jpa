@@ -1,6 +1,6 @@
 # Spring-JPA - Digital Innovation One
 
-The goal of this project is to remember JDBC implementation
+The goal of this project is to understand JPA in real project.
 ## Getting Started
 
 1. Clone this project
